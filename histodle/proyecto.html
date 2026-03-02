@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Histodle - Wordle de Historia</title>
+    <script defer src="proyecto.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Histodle (palabras de 5 letras)</h1>
+    </header>
+    <main>
+      <section class="descripcion">
+        <p><strong>Bienvenid@ al Histodle</strong></p>
+        <p>
+          Adivina una palabra de 5 letras relacionada con la historia. Puede
+          ser:
+        </p>
+        <ul>
+          <li>Un personaje histórico</li>
+          <li>Una civilización</li>
+          <li>Una idea o concepto histórico</li>
+          <li>Un lugar histórico</li>
+        </ul>
+        <p>Después de cada intento, las letras se colorean para dar pistas:</p>
+        <ul>
+          <li style="color: #6ca965">
+            🟩 Verde: letra correcta en la posición correcta
+          </li>
+          <li style="color: #c8b653">
+            🟨 Amarillo: letra correcta en posición incorrecta
+          </li>
+          <li style="color: #ad0000">🟥 Rojo: letra incorrecta</li>
+        </ul>
+        <p><strong>¡Demuestra cuánto sabes de historia!</strong></p>
+      </section>
+      <section id="juego">
+        <div class="tablero" id="tablero"></div>
+        <input id="entrada" maxlength="5" />
+        <button id="boton">Púlsame</button>
+        <button id="reiniciar">Reiniciar</button>
+        <div id="mensaje"></div>
+        <div id="victorias"></div>
+
+        <section id="historial">
+          <h3>Explicación histórica:</h3>
+        </section>
+      </section>
+    </main>
+    <footer><p>Histodle by A.G</p></footer>
+  </body>
+</html>
